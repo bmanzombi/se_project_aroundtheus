@@ -15,13 +15,16 @@
 }
 
 .profile__title {
+  white-space: nowrap;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 42px;
-  max-width: 372px;
+   max-width: 372px;
   line-height: 48px;
   font-weight: 500;
   grid-area: title;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .profile__edit-button {
