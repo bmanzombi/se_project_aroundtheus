@@ -1,14 +1,19 @@
 .cards {
-  margin-top: 30px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  height: 742px;
 }
 .card {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   background-color: #fff;
+  overflow: hidden;
 }
 
-.cards__list {
+.card__list {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 282px);
