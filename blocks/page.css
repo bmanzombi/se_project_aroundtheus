@@ -18,9 +18,11 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 700px) {
   .page {
-    margin-left: 62px;
-    margin-right: 62px;
+    /* width: 282px;
+    height: 2266px; */
+    /* margin-left: 19px; */
+    margin-right: 19px;
   }
 }

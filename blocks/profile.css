@@ -1,14 +1,13 @@
 .profile {
   display: flex;
   align-items: center;
-  padding-top: 40px;
 }
 
 .profile__info {
   display: grid;
-  grid-template-areas: 
-  "title button" 
-  "description description";
+  grid-template-areas:
+    "title button"
+    "description description";
   grid-template-columns: repeat(auto, 373px);
   grid-gap: 7px 17px;
   list-style-type: none;
@@ -48,9 +47,11 @@
 }
 
 .profile__add-button {
-  background: transparent url(../images/Add\ Button.svg) center no-repeat;
+  background: transparent url(../images/add\ button.png) center no-repeat;
   width: 150px;
   height: 50px;
+  margin-bottom: 86px;
+  margin-top: 75px;
   margin-left: auto;
   border: 2px solid #fff;
 }
@@ -58,14 +59,19 @@
 .profile__image {
   height: 120px;
   width: 120px;
+  margin-top: 40px;
+  margin-bottom: 51px;
   object-position: cover;
   background-position: center;
-  margin-right: 24px;
+  margin-right: 30px;
   border-radius: 50%;
 }
 
 @media screen and (max-width: 700px) {
   .profile {
+    width: 282px;
+    padding-top: 42px;
+    padding-bottom: 36px;
     background-color: #000;
     flex-direction: column;
   }
@@ -77,14 +83,45 @@
   }
   .profile__description {
     width: 100%;
+    height: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
     text-align: center;
   }
   .profile__add-button {
     width: 282px;
-    margin: 0;
+    height: 50px;
+    margin: 36px 19px;
   }
-  .profile__title{
-    font-size: 42px;
-    line-height: 48px;
+  .profile__title {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    width: 196px;
+    height: 22px;
+    padding: 30px 10px 64px 43px;
+  }
+
+  .profile__image {
+    width: 120px;
+    height: 120px;
+    margin-top: 42px;
+    margin-bottom: 30px;
+    margin-left: 101px;
+    margin-right: 99px;
+  }
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+    margin-right: 34px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 4px;
+    border: 1px solid #fff;
   }
 }
+
