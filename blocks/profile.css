@@ -47,7 +47,7 @@
 }
 
 .profile__add-button {
-  background: transparent url(../images/add\ button.png) center no-repeat;
+  background: transparent url(../images/add\ button.svg) center no-repeat;
   width: 150px;
   height: 50px;
   margin-bottom: 86px;
@@ -70,8 +70,7 @@
 @media screen and (max-width: 700px) {
   .profile {
     width: 282px;
-    padding-top: 42px;
-    padding-bottom: 36px;
+    /* padding-bottom: 36px; */
     background-color: #000;
     flex-direction: column;
   }
@@ -103,7 +102,7 @@
     color: #fff;
     width: 196px;
     height: 22px;
-    padding: 30px 10px 64px 43px;
+   
   }
 
   .profile__image {
@@ -117,7 +116,7 @@
   .profile__edit-button {
     width: 18px;
     height: 18px;
-    margin-right: 34px;
+    margin-right: 0;
     margin-left: 10px;
     margin-bottom: 15px;
     margin-top: 4px;
