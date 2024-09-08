@@ -20,9 +20,9 @@
         height: 2266px; */
         border-radius: 10px;
         /* margin-right: 19px; */
-        display: grid;
-       justify-content: center;
-       grid-template-columns: repeat(auto-fit, 282px);
+        /* display: grid; */
+       /* justify-content: center; */
+       /* grid-template-columns: repeat(auto-fit, 282px); */
        grid-gap: 19px 19px;
     }
   }
