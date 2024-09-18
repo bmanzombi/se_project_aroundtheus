@@ -1,8 +1,6 @@
 .header {
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  /* display: flex; */
   margin-top: 45px;
-  /* min-height: 74px; */
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(84,84,84,.7);
 }
@@ -14,9 +12,6 @@
 
 @media screen and (max-width: 700px) {
   .header {
-    /* font-family: "Inter", Arial, Helvetica, sans-serif; */
-    /* border-bottom: 1px solid #545454; */
-    /* height: 56px; */
     padding: 0 28px 32px;
     margin-top: 28px;
     }
@@ -24,9 +19,5 @@
   .header__logo {
     width: 126px;
     height: 24px;
-    /* margin-top: 28px;
-    margin-bottom: 32px;
-    margin-left: 27px;
-    margin-right: 167px; */
   }
 }
