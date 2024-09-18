@@ -33,7 +33,12 @@
   grid-area: button;
   margin-top: 16px;
   margin-bottom: 24px;
-  /* border: 1px solid #fff; */
+  border: 1px solid #fff;
+}
+
+.profile__edit-button:hover {
+  opacity: 60%;
+  cursor: pointer;
 }
 
 .profile__description {
@@ -46,6 +51,7 @@
   max-width: 373px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .profile__add-button {
@@ -57,6 +63,11 @@
   margin-left: auto;
   border: 2px solid #fff;
   border-radius: 2px;
+}
+
+.profile__add-button:hover {
+  opacity: 60%;
+  cursor: pointer;
 }
 
 .profile__image {
