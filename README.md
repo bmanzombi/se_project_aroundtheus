@@ -15,8 +15,10 @@ This is the second project of the Software Engineering program at TripleTen. It 
 
 Add your ideas here :
 
-![video link](image.png)
-
 ### GH page
 
 [Deployment link](https://bmanzombi.github.io/se_project_aroundtheus)
+
+## Video
+
+[Video](https://drive.google.com/file/d/1vT4SQahi4ONaE_jbYL8ic4Uq1b-HO9V-/view?usp=drive_link)
