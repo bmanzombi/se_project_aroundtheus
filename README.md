@@ -21,4 +21,4 @@ Add your ideas here :
 
 ## Video
 
-[Video](https://drive.google.com/file/d/1vT4SQahi4ONaE_jbYL8ic4Uq1b-HO9V-/view?usp=drive_link)
+[Video](https://drive.google.com/file/d/1vT4SQahi4ONaE_jbYL8ic4Uq1b-HO9V-/view?usp=sharing)
