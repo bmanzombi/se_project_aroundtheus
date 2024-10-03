@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 19px;
+  background-color: rgba(0,0,0,.5);
+  z-index: 10;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+}
+ 
+.modal_opened {
+  visibility: visible;
+  opacity: 1;
+  color: #000;
+}
+
+.modal__container {
+  position: relative;
+  background-color: #fff;
+  align-items: center;
+  border: 10px;
+  margin: auto;
+  padding: 36px;
+}
+
+.modal__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
+  background-image: url(../images/Close\ Icon.svg);
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
