@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta content="ie=edge" http-equiv="X-UA-compatible" />
+    <meta content="ie=edge" http-equiv="X-UA-compatible" />
     <link href="./pages/index.css" rel="stylesheet" />
     <title>Around the U.S</title>
   </head>
   <body class="page">
     <div class="page__content">
       <header class="header">
-        <img class="header__logo" src="./images/Logo.svg" alt="Around the U.S Logo" />
+        <img
+          class="header__logo"
+          src="./images/Logo.svg"
+          alt="Around the U.S Logo"
+        />
       </header>
       <main class="content">
         <section class="profile page__section">
@@ -29,29 +33,42 @@
         <section class="cards page__section">
           <ul class="cards__list">
             <li class="card">
-              <img src="./images/yosemite-valley.jpg" alt=" lake" class="card__image" />
+              <img
+                src="./images/yosemite-valley.jpg"
+                alt=" lake"
+                class="card__image"
+              />
               <div class="card__info">
                 <h2 class="card__title">Yosemite Valley</h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
             <li class="card">
-              <img src="./images/lake-louise.png" alt="bald" class="card__image" />
+              <img
+                src="./images/lake-louise.png"
+                alt="bald"
+                class="card__image"
+              />
               <div class="card__info">
                 <h2 class="card__title">Lake Louise</h2>
                 <button type="button" class="card__like-button"></button>
-                </div>
-            </li>
-            <li class="card">
-              <img src="./images/bald-mountains.png" alt="lago" class="card__image" />
-              <div class="card__info">
-                <h2 class="card__title">Bald Mountains</h2>
-                <button type="button"  class="card__like-button"></button>
               </div>
             </li>
             <li class="card">
               <img
-                src="./images/latemar.png" alt="vanoise"
+                src="./images/bald-mountains.png"
+                alt="lago"
+                class="card__image"
+              />
+              <div class="card__info">
+                <h2 class="card__title">Bald Mountains</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/latemar.png"
+                alt="vanoise"
                 class="card__image"
               />
               <div class="card__info">
@@ -60,14 +77,22 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/vanoise-national-park.png" alt="yosemite" class="card__image" />
+              <img
+                src="./images/vanoise-national-park.png"
+                alt="yosemite"
+                class="card__image"
+              />
               <div class="card__info">
                 <h2 class="card__title">Vanoise National Park</h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
             <li class="card">
-              <img src="./images/lago-di-braies.png" alt="latemar" class="card__image" />
+              <img
+                src="./images/lago-di-braies.png"
+                alt="latemar"
+                class="card__image"
+              />
               <div class="card__info">
                 <h2 class="card__title">Logo Braies</h2>
                 <button type="button" class="card__like-button"></button>
@@ -85,8 +110,20 @@
         <button class="modal__close"></button>
         <form class="modal__form" id="profile-edit">
           <h3 class="modal__heading">Edit Profile</h3>
-          <input type="text" name="title" id="profile-edit-title" placeholder="Jacques cousteau"/>
-          <input type="text" name="description" id="profile-edit-title" placeholder="Explorer"/> 
+          <input
+            class="modal__input"
+            type="text"
+            name="title"
+            id="profile-edit-title"
+            placeholder="Name"
+          />
+          <input
+            class="modal__input"
+            type="text"
+            name="description"
+            id="profile-edit-title"
+            placeholder="Description"
+          />
           <button class="modal__button">Save</button>
         </form>
       </div>
