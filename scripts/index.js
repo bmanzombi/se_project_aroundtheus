@@ -31,3 +31,7 @@ const initialCards = [
 ];
 
 console.log(initialCards);
+ const profileEditButton = document.querySelector("#profile__edit-button");
+profileEditButton.addEventListener('click',() {
+  
+})
