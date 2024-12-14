@@ -37,9 +37,9 @@ const addCardModal = document.querySelector("#add-card-modal");
 const addNewCardModal = document.querySelector("#add-card-modal");
 const profileFormElement = document.querySelector("#profile-edit-form");
 const addCardFormElement = addCardModal.querySelector(".modal__form");
- const imageModal = document.querySelector("#image-modal");
- const modalImageEl = document.querySelector(".modal__image");
- const modalImageCaption = document.querySelector(".modal__image-caption");
+const imageModal = document.querySelector("#image-modal");
+const modalImageEl = document.querySelector(".modal__image");
+const modalImageCaption = document.querySelector(".modal__image-caption");
 // Buttons adn other DOM note
 
 const addNewCardButton = document.querySelector(".profile__add-button");
@@ -83,17 +83,17 @@ function getCardElement(cardData) {
   //set the alt of the image element to the name of the card
 
   //querySelect the likebutton
-  // const likeButton = cardElement.querySelectorAll(".card__like-button");
-  // likeButton.forEach((likeButton) => {
-  //   likeButton.addEventListener("click", () => {
-  //     likeButton.classList.toggle("card__like-button_active");
-  //   });
-  // });
+  const likeButton = cardElement.querySelectorAll(".card__like-button");
+  likeButton.forEach((likeButton) => {
+  likeButton.addEventListener("click", () => {
+  likeButton.classList.toggle("card__like-button_active");
+    });
+  });
 
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
- 
-  cardImageEl.addEventListener('click', () => {
+
+  cardImageEl.addEventListener("click", () => {
     modalImageEl.src = cardData.link;
     modalImageEl.alt = cardData.name;
     modalImageCaption.textContent = cardData.name;
@@ -145,7 +145,7 @@ addCardModalCloseButton.addEventListener("click", () =>
 );
 
 imageModalCloseButton.addEventListener("click", () => {
-  closeModal(imageModal)
+  closeModal(imageModal);
 });
 
 initialCards.forEach((cardData) => {
