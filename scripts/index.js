@@ -46,6 +46,7 @@ const addNewCardButton = document.querySelector(".profile__add-button");
 const profileEditButton = document.querySelector(".profile__edit-button");
 const profileEditCloseButton = profileEditModal.querySelector(".modal__close");
 const addCardModalCloseButton = addCardModal.querySelector(".modal__close");
+// const addCardModalSubmitButton = addCardModal.querySelector(".modal__button");
 const imageModalCloseButton = imageModal.querySelector(".modal__close");
 const profileTitle = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__description");
@@ -59,6 +60,7 @@ const jobInput = profileFormElement.querySelector("#profile-description-input");
 const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
+  const cardTitleInput = addCardFormElement.querySelector(".modal__input_type_title");
 const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
 
 function closeModal(modal) {
@@ -114,18 +116,22 @@ function handleProfileEditFormSubmit(evt) {
   evt.preventDefault();
   profileTitle.textContent = nameInput.value;
   profileDescription.textContent = jobInput.value;
-  closeModal(addCardModal);
+  closeModal(profileEditModal);
 }
+profileEditModal.addEventListener("submit", handleProfileEditFormSubmit);
 
-function handleaddCardSFormubmit(evt) {
+function handleAddCardFormSubmit(evt) {
   evt.preventDefault();
   const name = cardTitleInput.value;
   const link = cardUrlInput.value;
   renderCard({ name, link }, cardswrap);
-  closeModal(profileEditModal);
+  closeModal(addCardModal);
 }
+// set an event listener on the card form
+// submit listener
+// pass it handleaddCardSFormubmit
+addNewCardModal.addEventListener("submit", handleAddCardFormSubmit);
 
-profileEditModal.addEventListener("submit", handleProfileEditFormSubmit);
 profileEditButton.addEventListener("click", () => {
   nameInput.value = profileTitle.textContent;
   jobInput.value = profileDescription.textContent;

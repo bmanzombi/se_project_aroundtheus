@@ -9,8 +9,7 @@
   z-index: 10;
   display: flex;
   visibility: hidden;
-  transition: visibility 0.3s, opacity 0.3s ease-in;
-  
+  transition: visibility 5s, opacity 3s linear;
 }
 
 .modal_opened {
