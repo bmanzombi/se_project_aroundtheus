@@ -60,7 +60,9 @@ const jobInput = profileFormElement.querySelector("#profile-description-input");
 const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
-  const cardTitleInput = addCardFormElement.querySelector(".modal__input_type_title");
+const cardTitleInput = addCardFormElement.querySelector(
+  ".modal__input_type_title"
+);
 const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
 
 function closeModal(modal) {
@@ -87,8 +89,8 @@ function getCardElement(cardData) {
   //querySelect the likebutton
   const likeButton = cardElement.querySelectorAll(".card__like-button");
   likeButton.forEach((likeButton) => {
-  likeButton.addEventListener("click", () => {
-  likeButton.classList.toggle("card__like-button_active");
+    likeButton.addEventListener("click", () => {
+      likeButton.classList.toggle("card__like-button_active");
     });
   });
 
