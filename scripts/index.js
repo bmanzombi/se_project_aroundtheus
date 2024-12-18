@@ -35,7 +35,7 @@ const cardswrap = document.querySelector(".cards__list");
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const addCardModal = document.querySelector("#add-card-modal");
 const addNewCardModal = document.querySelector("#add-card-modal");
-const profileFormElement = document.querySelector("#profile-edit-form");
+const profileFormElement = document.forms["profile-edit-form"];
 const addCardFormElement = addCardModal.querySelector(".modal__form");
 const imageModal = document.querySelector("#image-modal");
 const modalImageEl = document.querySelector(".modal__image");
@@ -87,11 +87,9 @@ function getCardElement(cardData) {
   //set the alt of the image element to the name of the card
 
   //querySelect the likebutton
-  const likeButton = cardElement.querySelectorAll(".card__like-button");
-  likeButton.forEach((likeButton) => {
-    likeButton.addEventListener("click", () => {
-      likeButton.classList.toggle("card__like-button_active");
-    });
+  const likeButton = cardElement.querySelector(".card__like-button");
+  likeButton.addEventListener("click", () => {
+  likeButton.classList.toggle("card__like-button_active");
   });
 
   cardImageEl.src = cardData.link;
@@ -108,8 +106,8 @@ function getCardElement(cardData) {
 
   const cardElementDelete = cardElement.querySelector(".card__delete-button");
   cardElementDelete.addEventListener("click", () => {
-    cardElement.remove(cardElementDelete);
-    cardImageEl.alt = cardData.name;
+    cardElement.remove();
+    /*cardImageEl.alt = cardData.name;*/
   });
   return cardElement;
 }
@@ -120,7 +118,7 @@ function handleProfileEditFormSubmit(evt) {
   profileDescription.textContent = jobInput.value;
   closeModal(profileEditModal);
 }
-profileEditModal.addEventListener("submit", handleProfileEditFormSubmit);
+profileFormElement.addEventListener("submit", handleProfileEditFormSubmit);
 
 function handleAddCardFormSubmit(evt) {
   evt.preventDefault();
@@ -128,11 +126,13 @@ function handleAddCardFormSubmit(evt) {
   const link = cardUrlInput.value;
   renderCard({ name, link }, cardswrap);
   closeModal(addCardModal);
+  evt.target.reset();
 }
 // set an event listener on the card form
 // submit listener
 // pass it handleaddCardSFormubmit
-addNewCardModal.addEventListener("submit", handleAddCardFormSubmit);
+addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
+
 
 profileEditButton.addEventListener("click", () => {
   nameInput.value = profileTitle.textContent;
