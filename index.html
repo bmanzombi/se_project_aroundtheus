@@ -59,7 +59,7 @@
     <!-- <edit modal></edit> -->
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__close"></button>
+        <button class="modal__close modal__close-edit"></button>
         <form class="modal__form" id="profile-edit-form">
           <h3 class="modal__heading">Edit Profile</h3>
           <input
@@ -84,21 +84,21 @@
 
     <div class="modal" id="add-card-modal">
       <div class="modal__container">
-        <button class="modal__close"></button>
+        <button class="modal__close modal__close-add"></button>
         <form class="modal__form" id="add-card-form">
           <h3 class="modal__heading">New Place</h3>
           <input
             class="modal__input modal__input_type_title"
             type="text"
             name="title"
-            id="profile-title-input"
+            id="card-title-input"
             placeholder="Title"
           />
           <input
             class="modal__input modal__input_type_url"
             type="text"
             name="URL"
-            id="profile-description-input"
+            id="card-modal-input"
             placeholder="Image URL"
           />
           <button class="modal__button" type="submit">Save</button>

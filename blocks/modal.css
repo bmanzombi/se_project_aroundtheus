@@ -124,6 +124,15 @@
     height: 26px;
     width: 26px;
   }
+
+ .modal__close-edit{
+  left: calc(100% - 26px);
+ }
+
+ .modal__close-add{
+  left: calc(100% - 26px);
+ }
+
   .modal__button {
     height: 46px;
     border-radius: 2px 0px 0px 0px;
@@ -134,9 +143,10 @@
   .modal__image {
     max-height: none;
     max-width: none;
-    width: 100%;
+    width: 240px;
+    height: 299px;
   }
   .modal {
-    padding: 40px;
+    /*padding: 40px;*/
   }
 }
