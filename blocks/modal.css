@@ -130,13 +130,15 @@
   }
 
   .modal__close-edit {
-    left: calc(100% - 26px);
+    left: calc(100% - 35px);
     cursor: pointer;
+    top: auto;
   }
 
   .modal__close-add {
-    left: calc(100% - 26px);
+    left: calc(100% - 35px);
     cursor: pointer;
+    top: auto;
   }
 
   .modal__button {
