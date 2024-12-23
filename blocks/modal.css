@@ -32,11 +32,11 @@
   box-sizing: border-box;
 }
 
-.modal__container_preview {
-  /* background-color: transparent;
+.modal__container-preview {
+  background-color: transparent;
+  /*max-width: 75wv;
   padding: 0px;
-  max-width: 75wv;
-  max-height: 75hv; */
+  max-height: 75hv;*/
   position: relative;
   margin: auto;
 }
@@ -51,11 +51,11 @@
 
 .modal__close {
   width: 23px;
-  height: 23px;
+  height: 40px;
   position: absolute;
   cursor: pointer;
-  bottom: calc(100% + 5px);
-  left: calc(100% + 5px);
+  bottom: calc(100% - 50px);
+  left: calc(100% + 40px);
   background-image: url(../images/Close\ Icon.svg);
   border: none;
   background-color: transparent;
@@ -84,6 +84,7 @@
   border-radius: 2px;
   font-size: 18px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .modal__image-caption {
@@ -106,6 +107,7 @@
   left: 878.28px;
   gap: 0px;
   opacity: 0px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 582px) {
@@ -120,18 +122,22 @@
   }
   .modal__close {
     bottom: calc(100% + 5px);
-    left: calc(100% + 5px);
+    left: calc(100% - 15px);
     height: 26px;
     width: 26px;
+    cursor: pointer;
+    top: 5px;
   }
 
- .modal__close-edit{
-  left: calc(100% - 26px);
- }
+  .modal__close-edit {
+    left: calc(100% - 26px);
+    cursor: pointer;
+  }
 
- .modal__close-add{
-  left: calc(100% - 26px);
- }
+  .modal__close-add {
+    left: calc(100% - 26px);
+    cursor: pointer;
+  }
 
   .modal__button {
     height: 46px;
@@ -139,11 +145,13 @@
     opacity: 0px;
     font-size: 14px;
     line-height: 17px;
+    cursor: pointer;
   }
   .modal__image {
     max-height: none;
     max-width: none;
     width: 240px;
     height: 299px;
+    right: 15px;
   }
 }
