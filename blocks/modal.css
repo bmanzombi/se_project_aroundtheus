@@ -20,8 +20,8 @@
 }
 
 .modal__container {
-  top: 90px;
-  width: 100%;
+  /* top: 90px; */
+  /* width: 100%; */
   position: relative;
   background-color: #fff;
   align-items: center;
@@ -33,12 +33,11 @@
 }
 
 .modal__container-preview {
+  display: flex;
   background-color: transparent;
-  /*max-width: 75wv;
-  padding: 0px;
-  max-height: 75hv;*/
   position: relative;
   margin: auto;
+  padding: 0px;
 }
 
 .modal__heading {
@@ -51,11 +50,11 @@
 
 .modal__close {
   width: 23px;
-  height: 40px;
+  height: 23px;
   position: absolute;
   cursor: pointer;
-  bottom: calc(100% - 50px);
-  left: calc(100% + 40px);
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
   background-image: url(../images/Close\ Icon.svg);
   border: none;
   background-color: transparent;
@@ -88,16 +87,19 @@
 }
 
 .modal__image-caption {
+  position: absolute;
   width: fit-content;
   color: #fff;
+  top: calc(100% + 5px);
+  margin: 0;
 }
 
 .modal__image {
-  position: relative;
-  width: 433px;
-  height: 540px;
   max-width: 80vw;
   max-height: 80vh;
+  object-fit: cover;
+  overflow:hidden;
+  object-position: center;
 }
 
 .close__icon {
@@ -122,11 +124,10 @@
   }
   .modal__close {
     bottom: calc(100% + 5px);
-    left: calc(100% - 15px);
+    left: calc(100% + 5px);
     height: 26px;
     width: 26px;
     cursor: pointer;
-    top: 5px;
   }
 
   .modal__close-edit {
@@ -155,5 +156,12 @@
     width: 240px;
     height: 299px;
     right: 15px;
+  }
+
+  .modal__container {
+    padding: 25px 22px 25px 22px;
+  }
+  .modal__container-preview{
+    padding: 0px;
   }
 }
