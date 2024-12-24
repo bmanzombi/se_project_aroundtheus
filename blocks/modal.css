@@ -98,7 +98,7 @@
   max-width: 80vw;
   max-height: 80vh;
   object-fit: cover;
-  overflow:hidden;
+  overflow: hidden;
   object-position: center;
 }
 
@@ -161,7 +161,8 @@
   .modal__container {
     padding: 25px 22px 25px 22px;
   }
-  .modal__container-preview{
+
+  .modal__container-preview {
     padding: 0px;
   }
 }

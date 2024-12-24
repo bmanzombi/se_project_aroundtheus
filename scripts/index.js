@@ -89,7 +89,7 @@ function getCardElement(cardData) {
   //querySelect the likebutton
   const likeButton = cardElement.querySelector(".card__like-button");
   likeButton.addEventListener("click", () => {
-  likeButton.classList.toggle("card__like-button_active");
+    likeButton.classList.toggle("card__like-button_active");
   });
 
   cardImageEl.src = cardData.link;
@@ -132,7 +132,6 @@ function handleAddCardFormSubmit(evt) {
 // submit listener
 // pass it handleaddCardSFormubmit
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
-
 
 profileEditButton.addEventListener("click", () => {
   nameInput.value = profileTitle.textContent;
